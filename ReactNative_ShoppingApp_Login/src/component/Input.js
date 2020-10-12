@@ -1,11 +1,12 @@
 import React from 'react';
 import { TextInput, View,StyleSheet, Platform } from 'react-native';
 
-const Input = ({holder}) =>{
+const Input = ({holder,keyboard}) =>{
     return(
         <View style={styles.container}>
             <TextInput
                 placeholder ={holder}
+                keyboardType ={keyboard}
             />
 
         </View>
